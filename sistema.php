@@ -140,6 +140,7 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <option value="Sistema de bancos">Sistema de bancos</option>
                 <option value="Redes sociais">Redes sociais</option>
                 <option value="Maxbot">Maxbot</option>
+                <option value="Outros">Outros</option>
             </select>
             <label for="setor"><strong>Setor</strong></label>
             <select name="setor" id="setor" required>
