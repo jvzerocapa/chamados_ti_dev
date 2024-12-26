@@ -16,6 +16,9 @@ $mensagem = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include_once('conexao.php');
 
+    // Define o conjunto de caracteres para a conexão
+    $conexao->set_charset("utf8mb4");
+
     $usuario = $_SESSION['usuario']; // Usuário logado
     $motivo = $_POST['motivo'];
     $descricao = $_POST['descricaodochamado'];
@@ -58,21 +61,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Usar SSL
             $mail->Port       = 465;                         // Porta SMTP para SSL
 
+            // Configuração do charset
+            $mail->CharSet = 'UTF-8';
+
             // Remetente e destinatários
             $mail->setFrom('chamadosti@adeltec.com.br', 'Chamados T.I');
-            $mail->addAddress($emailUsuario , 'E-mail do Usuário'); // E-mail do usuário
+            $mail->addAddress($emailUsuario, 'E-mail do Usuário'); // E-mail do usuário
             $mail->addReplyTo('informatica@adeltec.com.br', 'Informatica Adeltec');
             $mail->addCC('informatica@adeltec.com.br'); // Adiciona cópia para informatica@adeltec.com.br
 
             // Conteúdo do e-mail
             $mail->isHTML(true); // Define formato HTML
             $mail->Subject = "Novo Chamado Aberto: $motivo";
-            $mail->Body    = "<p>Ola, <strong>$usuario do Setor $setor</strong></p>
+            $mail->Body    = "<p>Olá, <strong>$usuario do Setor $setor</strong></p>
                               <p>Seu chamado foi aberto com sucesso!</p>
                               <p><strong>Motivo:</strong> $motivo</p>
-                              <p><strong>Descricao:</strong> $descricao</p>
+                              <p><strong>Descrição:</strong> $descricao</p>
                               <p>Obrigado por entrar em contato. <br><br>
-                              <img src=https://lh3.googleusercontent.com/pw/AP1GczOghes6WodxCKj2KySn9IkI8RXCnFpxlzfgUQGmoefMV1o1kITBqEBDgjHJx8MHPYshsjgUo0Yxwxtkq5lhGBdt0PB4YmqZzwpYezlkTzb6-G3knDEUoWjfXtbeBRzDVJndvJruLiclGet_Ul4uH2I=w320-h120-s-no-gm?authuser=0></img></p>";
+                              <img src='https://lh3.googleusercontent.com/pw/AP1GczOghes6WodxCKj2KySn9IkI8RXCnFpxlzfgUQGmoefMV1o1kITBqEBDgjHJx8MHPYshsjgUo0Yxwxtkq5lhGBdt0PB4YmqZzwpYezlkTzb6-G3knDEUoWjfXtbeBRzDVJndvJruLiclGet_Ul4uH2I=w320-h120-s-no-gm?authuser=0'></p>";
 
             // Envia o e-mail
             $mail->send();
@@ -87,6 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mensagem = "Erro ao abrir o chamado.";
     }
 }
+
 
 // Exibe a mensagem de sucesso se redirecionado
 if (isset($_GET['success']) && $_GET['success'] == 1) {
