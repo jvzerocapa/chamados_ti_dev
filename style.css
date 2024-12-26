@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNfcFA9wXHOiC0VEApLtpKkytDX9yrb7JAS2P-q776nnOBm_iAvgC4b-Qq_PU_8QSkGZWPyfghZLXipMIzPWzS3gCziM0iVb1j-hCqyfMNX3hP-o1qgJAml-UC9eVsy8M_UGsy22cbcuAaDXrTUyRrMKw=w1668-h953-s-no-gm?authuser=0);
+    background-size: cover;*/ /*Colocar imagem de Background*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #6d63ff, #03002d);
+    background-size: cover;
+}
+
+
+nav {
+    position: center;
+    top: 10px;
+    left: 15px;
+}
+
+
+
+.login-quadro {
+
+    background-color: #4d5450;
+    width: 500px;
+    height: 360px;
+    border-radius: 7px;
+    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.login-quadro h1 {
+
+  color: #fff;
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+
+}
+
+.login-quadro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+ t
+
+
+.login-quadro input[type="text"],
+.login-quadro input[type="password"] {
+    background-color: #616965;
+    border: none;
+    width: 300px ;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    color: #fff;
+    padding: 4px;
+    font-family: "Inter", sans-serif;
+    
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+ }
+
+.login-quadro button {
+    background-color: #616965;
+    color: #fff;
+    width: 100px ;
+    height: 35px ;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.login-quadro button:hover {
+    background-color: #4a4a4a;
+    transition: 0.5s;
+}
+
+.inter-fonte {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+  .rodape{
+
+    margin-top: 220px;
+    width: 100%;
+    color: #fff
+}
+
+.mensagem-erro {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.quadro-admin {
+
+    background-color: #4d5450;
+    width: 500px;
+    height: 360px;
+    border-radius: 7px;
+    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+}
+
+.quadro-admin h1 {
+
+  color: #fff;
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+
+}
+
+.quadro-admin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quadro-admin button {
+    background-color: #616965;
+    color: #fff;
+    width: 110px ;
+    height: 35px ;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    margin: 5px;
+}
+.quadro-admin button:hover {
+    background-color: #4a4a4a;
+    transition: 0.5s;
+}
+.chamados {
+
+    background-color: #4d5450;
+    width: 500px;
+    height: 425px;
+    border-radius: 7px;
+    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.chamados h2 {
+
+    color: #fff;
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+  
+  }
+
+  .chamados form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.chamados ::-webkit-input-placeholder {
+    color: #000000;
+ }
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+ .chamados button {
+    background-color: #616965;
+    color: #fff;
+    width: 100px ;
+    height: 35px ;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    margin: 5px;
+}
+.chamados button:hover{
+    background-color: #4a4a4a;
+    transition: 0.5s;
+}
+
+.chamados select{
+    background-color: #616965;
+    border: none;
+    width: 300px ;
+    height: 25px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    color: #fff;
+    padding: 4px;
+    font-family: "Inter", sans-serif;
+    
+}
+.chamados label {
+
+    color: #fff;
+}
+
+.mensagem {
+    color: green;
+    margin-top: 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    z-index: 1000;
+    display: none;
+}
+
+.popup.sucess {
+    background-color: #f44336;
+}
+
+.popup.error {
+    background-color: #f44336;
+}
+
+
+.erro-popup{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff0000;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    z-index: 1000;
+    display: none;
+
+}
+
+.chamados label{
+    padding-bottom: 10px;
+}
+
+.chamados textarea{
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    padding: 7px;
+}
+
+.chamados select{
+    border-radius: 8px;
+}
