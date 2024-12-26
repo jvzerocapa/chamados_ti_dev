@@ -164,6 +164,7 @@ if (isset($_POST['exportarPDF'])) {
             <option value="Redes sociais" <?= $filtroMotivo == "Redes sociais" ? 'selected' : '' ?>>Redes sociais</option>
             <option value="Maxbot" <?= $filtroMotivo == "Maxbot" ? 'selected' : '' ?>>Maxbot</option>
             <option value="Outros" <?= $filtroMotivo == "Outros" ? 'selected' : '' ?>>Outros</option>
+            <option value="Office" <?= $filtroMotivo == "Office" ? 'selected' : '' ?>>Office</option>
         </select>
         <label for="filtroSetor">Setor:</label>
         <select id="filtroSetor" name="filtroSetor" class="filtrosetor">
