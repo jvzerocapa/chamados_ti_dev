@@ -1,9 +1,14 @@
 body {
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOggO0d6E8GvCFv-CejVmOBYVf8op8qkkkqhDZxo6zRQMAM-MLNDRf8er7GSkvvrzZDjzF-aKHtaIy4Pdlud3mOv0ci62_n_j13vDYenZXSNPY1vwwELydQa5zFyMxPAK8wjPI1ifTraS-zqWuz9XZk=w1031-h773-s-no-gm?authuser=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #6d63ff,#03002d);
 }
 
 h1 {
