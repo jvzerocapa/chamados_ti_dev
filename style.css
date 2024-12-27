@@ -11,16 +11,16 @@ html, body {
 }
 
 body {
-    /*background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNfcFA9wXHOiC0VEApLtpKkytDX9yrb7JAS2P-q776nnOBm_iAvgC4b-Qq_PU_8QSkGZWPyfghZLXipMIzPWzS3gCziM0iVb1j-hCqyfMNX3hP-o1qgJAml-UC9eVsy8M_UGsy22cbcuAaDXrTUyRrMKw=w1668-h953-s-no-gm?authuser=0);
-    background-size: cover;*/ /*Colocar imagem de Background*/
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOggO0d6E8GvCFv-CejVmOBYVf8op8qkkkqhDZxo6zRQMAM-MLNDRf8er7GSkvvrzZDjzF-aKHtaIy4Pdlud3mOv0ci62_n_j13vDYenZXSNPY1vwwELydQa5zFyMxPAK8wjPI1ifTraS-zqWuz9XZk=w1031-h773-s-no-gm?authuser=0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #6d63ff, #03002d);
-    background-size: cover;
 }
 
 
@@ -31,25 +31,31 @@ nav {
 }
 
 
+.imagem{
+ padding-bottom: 10px;
+
+}
 
 .login-quadro {
-
-    background-color: #4d5450;
+    background-color: #000000;
+    border-color: #AAF23D;
+    border-width: 1px; /* Borda fina */
+    border-style: solid; /* Estilo da borda */
     width: 500px;
     height: 360px;
-    border-radius: 7px;
-    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
-    
+    opacity: 0.9;
+    margin-top: 25px;
+    margin-bottom: 280px;
 }
 
 .login-quadro h1 {
 
-  color: #fff;
+  color: #AAF23D;
   padding: 15px;
   font-family: "Inter", sans-serif;
 
@@ -62,19 +68,20 @@ nav {
     justify-content: center;
 
 }
- t
+
 
 
 .login-quadro input[type="text"],
 .login-quadro input[type="password"] {
-    background-color: #616965;
-    border: none;
-    width: 300px ;
+    background-color: #000000;
+    border: none; /* Remove todas as bordas */
+    border-bottom: 1px solid #fff; /* Adiciona a linha branca apenas na parte de baixo */
+    width: 300px;
     height: 25px;
     margin-bottom: 15px;
-    border-radius: 7px;
+    border-radius: 0; /* Remove o border-radius */
     color: #fff;
-    padding: 4px;
+    padding-bottom: 8px;
     font-family: "Inter", sans-serif;
     
 }
@@ -84,7 +91,7 @@ nav {
  }
 
 .login-quadro button {
-    background-color: #616965;
+    background-color: #87BF34;
     color: #fff;
     width: 100px ;
     height: 35px ;
@@ -95,7 +102,7 @@ nav {
 }
 
 .login-quadro button:hover {
-    background-color: #4a4a4a;
+    background-color: #4dc22a;
     transition: 0.5s;
 }
 
@@ -107,11 +114,15 @@ nav {
   }
 
 
-  .rodape{
+.rodape{
 
-    margin-top: 220px;
-    width: 100%;
-    color: #fff
+margin-top: -50px;
+
+}
+
+.rodape img {
+    width: 210px;
+    height: 60px;
 }
 
 .mensagem-erro {

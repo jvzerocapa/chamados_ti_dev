@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </script>
     <footer>
         <div class="rodape">
-            <p>Powered by João Vitor</p>
+            <p><img src="https://lh3.googleusercontent.com/pw/AP1GczOy-FS3ZdUtU3VQOXtEsf7K07CCKGYDfQzgh-U9RrvzBzmFMuidtUaf-oaCtMTmzM9-K2WuzrG79zLah0JwNQxDJQ7k6Dzcez8z6HUhygQ1vFFS2Nj8niKToy0wcRSNCmg5GV_z7JDUBiuMzbx76EI=w264-h72-s-no-gm?authuser=0"></p>
         </div>
     </footer>
 </body>
