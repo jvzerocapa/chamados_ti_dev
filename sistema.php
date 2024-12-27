@@ -122,9 +122,9 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
 
 
     <div class="chamados">
-            <h2>Selecione o Motivo</h2>
+            <h2>Diga-nos o que está acontecendo</h2>
         <form action="sistema.php" method="POST">
-            <label for="motivo"><strong>Motivo</strong></label>
+            <label for="motivo"><strong></strong></label>
             <select name="motivo" id="motivo" required>
                 <option value="">-- Selecione uma opção --</option>
                 <option value="Programas em geral">Sistemas Rh</option>
@@ -143,7 +143,7 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <option value="Office">Office</option>
                 <option value="Outros">Outros</option>
             </select>
-            <label for="setor"><strong>Setor</strong></label>
+            <label for="setor"><strong></strong></label>
             <select name="setor" id="setor" required>
                 <option value="">-- Selecione um setor --</option>
                 <option value="marketing">Marketing</option>
@@ -157,9 +157,9 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <label for="descrição"><strong>Descrição</strong></label>
                 <textarea id="descricaodochamado" name="descricaodochamado" rows="4" cols="50" placeholder=" Descreva o seu problema/duvida"></textarea>
             <br><br>
-            <div class="botoes">
-            <button type="submit">Enviar</button>
-            <button onclick="window.location.href='index.php';">Sair</button>
+            <div class="botoes">         
+            <button onclick="window.location.href='index.php';" class="sair-button">Sair</button>
+            <button type="submit" >Enviar</button>
             </div>        
         </form>
        
@@ -183,7 +183,7 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
 
     <footer>
         <div class="rodape">
-            <p>Powered by João Vitor</p>
+            <p><img src="https://lh3.googleusercontent.com/pw/AP1GczOy-FS3ZdUtU3VQOXtEsf7K07CCKGYDfQzgh-U9RrvzBzmFMuidtUaf-oaCtMTmzM9-K2WuzrG79zLah0JwNQxDJQ7k6Dzcez8z6HUhygQ1vFFS2Nj8niKToy0wcRSNCmg5GV_z7JDUBiuMzbx76EI=w264-h72-s-no-gm?authuser=0"></p>
         </div>
     </footer>
     

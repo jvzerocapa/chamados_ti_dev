@@ -180,16 +180,19 @@ margin-top: -50px;
 }
 .chamados {
 
-    background-color: #4d5450;
+    background-color: #000000;
+    border-color: #AAF23D;
+    border-width: 1px; /* Borda fina */
+    border-style: solid; /* Estilo da borda */
     width: 500px;
     height: 425px;
-    border-radius: 7px;
-    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    /* box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5); */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 220px;
 }
 
 .chamados h2 {
@@ -219,8 +222,21 @@ margin-top: -50px;
     margin-top: 10px;
 
 }
+.sair-button {
+    background: linear-gradient(to right, #4E4D4D, #BFBFBF);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
  .chamados button {
-    background-color: #616965;
+    background-color: #AAF23D;
     color: #fff;
     width: 100px ;
     height: 35px ;
@@ -229,21 +245,24 @@ margin-top: -50px;
     cursor: pointer;
     margin: 5px;
 }
+
 .chamados button:hover{
-    background-color: #4a4a4a;
+    background-color: #4dc22a;
     transition: 0.5s;
 }
 
 .chamados select{
-    background-color: #616965;
+    background-color: #000000;
     border: none;
+    border-bottom: 1px solid #fff; /* Adiciona a linha branca apenas na parte de baixo */
     width: 300px ;
     height: 25px;
     margin-bottom: 15px;
-    border-radius: 7px;
+    border-radius: 0px; 
     color: #fff;
     padding: 4px;
     font-family: "Inter", sans-serif;
+
     
 }
 .chamados label {
