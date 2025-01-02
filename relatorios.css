@@ -12,15 +12,15 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #AAF23D;
 }
 
 th {
-    color: #fff;
+    color: #AAF23D;
 }
 
 td {
-    color: #fff;
+    color: #AAF23D;
     word-break: break-word; /* Quebra palavras longas */
     white-space: normal;    /* Permite que o texto quebre automaticamente */
     word-wrap: break-word;  /* Garante a quebra de linha nas palavras */
@@ -28,11 +28,11 @@ td {
 }
 
 label {
-    color: #fff;
+    color: #AAF23D;
 }
 
 button {
-    background-color: #616965;
+    background-color: #87BF34;
     color: #fff;
     width: 100px;
     height: 35px;
@@ -43,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #4a4a4a;
+    background-color: #37793d;
     transition: 0.5s;
 }
 
@@ -51,11 +51,10 @@ table {
     width: 100%;
     table-layout: fixed;  /* Fixe a largura das colunas */
     border-collapse: collapse;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para a tabela */
     border-radius: 8px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que o conteúdo não ultrapasse os cantos arredondados */
     margin-bottom: 20px; /* Espaçamento abaixo da tabela */
-    background-color: #2c2f33; /* Cor de fundo para contraste */
+    background-color: #000000; /* Cor de fundo para contraste */
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -104,7 +103,7 @@ tr:hover {
 }
 
 .form-filtro input {
-    background-color: #616965;
+    background-color: #87BF34;
     border-radius: 20px;
     color: #fff;
 }
@@ -115,11 +114,11 @@ tr:hover {
 
 .filtromotivo {
     border-radius: 20px;
-    background-color: #616965;
+    background-color: #87BF34;
     color: #fff;
 }
 .filtrosetor {
     border-radius: 20px;
-    background-color: #616965;
+    background-color: #87BF34;
     color: #fff;
 }
