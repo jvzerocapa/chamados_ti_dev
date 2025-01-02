@@ -134,25 +134,28 @@ margin-top: -50px;
 
 .quadro-admin {
 
-    background-color: #4d5450;
+    background-color: #000000;
+    border-color: #AAF23D;
+    border-width: 1px; /* Borda fina */
+    border-style: solid; /* Estilo da borda */
     width: 500px;
     height: 360px;
     border-radius: 7px;
-    box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 240px;
     
     
 }
 
 .quadro-admin h1 {
 
-  color: #fff;
-  padding: 15px;
-  font-family: "Inter", sans-serif;
+    color: #AAF23D;
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+  
 
 }
 
@@ -165,7 +168,7 @@ margin-top: -50px;
 }
 
 .quadro-admin button {
-    background-color: #616965;
+    background-color: #87BF34;
     color: #fff;
     width: 110px ;
     height: 35px ;
@@ -175,7 +178,7 @@ margin-top: -50px;
     margin: 5px;
 }
 .quadro-admin button:hover {
-    background-color: #4a4a4a;
+    background-color: #37793d;
     transition: 0.5s;
 }
 .chamados {
