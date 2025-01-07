@@ -141,7 +141,9 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <option value="Redes sociais">Redes sociais</option>
                 <option value="Maxbot">Maxbot</option>
                 <option value="Office">Office</option>
+                <option value="Impressoras">Impressoras</option>
                 <option value="Outros">Outros</option>
+                
             </select>
             <label for="setor"><strong></strong></label>
             <select name="setor" id="setor" required>
@@ -153,6 +155,7 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <option value="financeiro">Financeiro</option>
                 <option value="gerencia">Gerencia</option>
                 <option value="comercial">Comercial</option>
+                <option value="desenvolvimento">Desenvolvimento</option>
                 </select>
                 <label for="descrição"><strong>Descrição</strong></label>
                 <textarea id="descricaodochamado" name="descricaodochamado" rows="4" cols="50" placeholder=" Descreva o seu problema/duvida"></textarea>

@@ -164,7 +164,9 @@ if (isset($_POST['exportarPDF'])) {
             <option value="Redes sociais" <?= $filtroMotivo == "Redes sociais" ? 'selected' : '' ?>>Redes sociais</option>
             <option value="Maxbot" <?= $filtroMotivo == "Maxbot" ? 'selected' : '' ?>>Maxbot</option>
             <option value="Office" <?= $filtroMotivo == "Office" ? 'selected' : '' ?>>Office</option>
+            <option value="Impressoras" <?= $filtroMotivo == "Impressoras" ? 'selected' : '' ?>>Impressoras</option>
             <option value="Outros" <?= $filtroMotivo == "Outros" ? 'selected' : '' ?>>Outros</option>
+            
             
         </select>
         <label for="filtroSetor">Setor:</label>
@@ -177,6 +179,7 @@ if (isset($_POST['exportarPDF'])) {
             <option value="financeiro" <?= $filtroSetor == "financeiro" ? 'selected' : '' ?>>Financeiro</option>
             <option value="gerencia" <?= $filtroSetor == "gerencia" ? 'selected' : '' ?>>Gerência</option>
             <option value="comercial" <?= $filtroSetor == "comercial" ? 'selected' : '' ?>>Comercial</option>
+            <option value="desenvolvimento" <?= $filtroSetor == "desenvolvimento" ? 'selected' : '' ?>>desenvolvimento</option>
         </select>
 
 
