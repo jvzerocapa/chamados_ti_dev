@@ -165,6 +165,7 @@ if (isset($_POST['exportarPDF'])) {
             <option value="Maxbot" <?= $filtroMotivo == "Maxbot" ? 'selected' : '' ?>>Maxbot</option>
             <option value="Office" <?= $filtroMotivo == "Office" ? 'selected' : '' ?>>Office</option>
             <option value="Impressoras" <?= $filtroMotivo == "Impressoras" ? 'selected' : '' ?>>Impressoras</option>
+            <option value="Ramal / ligacoes" <?= $filtroMotivo == "Ramal / ligacoes" ? 'selected' : '' ?>>Ramal / ligacoes</option>
             <option value="Outros" <?= $filtroMotivo == "Outros" ? 'selected' : '' ?>>Outros</option>
             
             

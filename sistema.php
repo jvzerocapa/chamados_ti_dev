@@ -142,6 +142,7 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
                 <option value="Maxbot">Maxbot</option>
                 <option value="Office">Office</option>
                 <option value="Impressoras">Impressoras</option>
+                <option value="Ramal / ligacoes">Ramal / ligações</option>
                 <option value="Outros">Outros</option>
                 
             </select>
