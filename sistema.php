@@ -191,5 +191,14 @@ if (isset($_GET['success']) && $_GET['success'] == 1) {
         </div>
     </footer>
     
+    <script>
+        // Desabilita o botão de envio e altera o texto ao enviar o formulário e Não permite enviar mais de um chamado de uma só vez
+    document.querySelector("form").addEventListener("submit", function (e) {
+        const submitButton = this.querySelector("button[type='submit']");
+        submitButton.disabled = true;
+        submitButton.innerText = "Enviando...";
+    });
+</script>
+
 </body>
 </html>

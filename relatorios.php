@@ -133,6 +133,7 @@ if (isset($_POST['exportarPDF'])) {
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta http-equiv="refresh" content="30">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios de Chamados</title>
@@ -166,6 +167,9 @@ if (isset($_POST['exportarPDF'])) {
             <option value="Office" <?= $filtroMotivo == "Office" ? 'selected' : '' ?>>Office</option>
             <option value="Impressoras" <?= $filtroMotivo == "Impressoras" ? 'selected' : '' ?>>Impressoras</option>
             <option value="Ramal / ligacoes" <?= $filtroMotivo == "Ramal / ligacoes" ? 'selected' : '' ?>>Ramal / ligacoes</option>
+            <option value="AdpontoV1" <?= $filtroMotivo == "AdpontoV1" ? 'selected' : '' ?>>Adponto V1</option>
+            <option value="AdpontoV2" <?= $filtroMotivo == "AdpontoV2" ? 'selected' : '' ?>>Adponto V2</option>
+            <option value="WaSeller" <?= $filtroMotivo == "WaSeller" ? 'selected' : '' ?>>WaSeller</option>
             <option value="Outros" <?= $filtroMotivo == "Outros" ? 'selected' : '' ?>>Outros</option>
             
             
@@ -237,5 +241,23 @@ if (isset($_POST['exportarPDF'])) {
             </tr>
         </tbody>
     </table>
+
+
+    <script>
+  // Script para quando tiver alguma alteração na pagina ele não volte para o topo !!
+  // Salvar a posição do scroll antes da saída da página
+  window.addEventListener('beforeunload', function() {
+    localStorage.setItem('scrollPos', window.scrollY);
+  });
+
+  // Ao carregar a página, aplicar a posição salva (se existir)
+  window.addEventListener('load', function() {
+    const scrollPos = localStorage.getItem('scrollPos');
+    if (scrollPos !== null) {
+      window.scrollTo(0, parseInt(scrollPos));
+      localStorage.removeItem('scrollPos'); // opcional: limpa para não afetar outros reloads
+    }
+  });
+</script>
 </body>
 </html>
