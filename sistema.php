@@ -54,10 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // Configurações SMTP
             $mail->isSMTP();
-            $mail->Host       = 'mail.adeltec.com.br';       // Servidor SMTP
+            $mail->Host       = '';       // Servidor SMTP
             $mail->SMTPAuth   = true;                        // Ativa autenticação SMTP
-            $mail->Username   = 'chamadosti@adeltec.com.br'; // Usuário SMTP
-            $mail->Password   = 'chamadosti43690';           // Senha do e-mail SMTP
+            $mail->Username   = ''; // Usuário SMTP
+            $mail->Password   = '';           // Senha do e-mail SMTP
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Usar SSL
             $mail->Port       = 465;                         // Porta SMTP para SSL
 
@@ -65,10 +65,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->CharSet = 'UTF-8';
 
             // Remetente e destinatários
-            $mail->setFrom('chamadosti@adeltec.com.br', 'Chamados T.I');
+            $mail->setFrom('emailaqui@teste.com.br', 'Chamados T.I');
             $mail->addAddress($emailUsuario, 'E-mail do Usuário'); // E-mail do usuário
-            $mail->addReplyTo('informatica@adeltec.com.br', 'Informatica Adeltec');
-            $mail->addCC('informatica@adeltec.com.br'); // Adiciona cópia para informatica@adeltec.com.br
+            $mail->addReplyTo('emailaqui@teste.com.br', 'Nome do usuario para quem vai responder');
+            $mail->addCC('emailaqui@teste.com.br'); // Adiciona cópia para este e-mail
 
             // Conteúdo do e-mail
             $mail->isHTML(true); // Define formato HTML
@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                               <p><strong>Motivo:</strong> $motivo</p>
                               <p><strong>Descrição:</strong> $descricao</p>
                               <p>Obrigado por entrar em contato. <br><br>
-                              <img src='https://lh3.googleusercontent.com/pw/AP1GczOghes6WodxCKj2KySn9IkI8RXCnFpxlzfgUQGmoefMV1o1kITBqEBDgjHJx8MHPYshsjgUo0Yxwxtkq5lhGBdt0PB4YmqZzwpYezlkTzb6-G3knDEUoWjfXtbeBRzDVJndvJruLiclGet_Ul4uH2I=w320-h120-s-no-gm?authuser=0'></p>";
+                              <img src='Assinatura eletronica aqui'></p>";
 
             // Envia o e-mail
             $mail->send();
